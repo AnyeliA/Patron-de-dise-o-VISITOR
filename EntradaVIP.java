@@ -10,7 +10,8 @@ class EntradaVIP implements Entrada {
         return precio;
     }
 
-    public double aceptar(Visitante visitante) {
-        return visitante.visitar(this);
+     public double aceptar(Visitante visitante) {
+        double resultado = visitante.visitar(this);
+        return resultado;
     }
 }
